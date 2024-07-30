@@ -2,15 +2,20 @@ import 'package:fl_chart/fl_chart.dart';
 
 class LineData {
   final spots = const [
-    FlSpot(1.68, 21.04),
-    FlSpot(15.2, 72.04),
+    FlSpot(1.68, 0),
+    FlSpot(15.2, 23),
     FlSpot(23.4, 33.12),
     FlSpot(33.2, 45.2),
     FlSpot(44.2, 91.23),
-    FlSpot(49.3, 10.3),
-    FlSpot(60.1, 55.1),
-    FlSpot(80.3, 100),
-    FlSpot(100, 21.04),
+    FlSpot(49.3, 91.3),
+    FlSpot(60.1, 83),
+    FlSpot(71.3, 100),
+    FlSpot(82, 38.04),
+    FlSpot(89, 97.04),
+    FlSpot(93, 76.04),
+    FlSpot(99, 12.04),
+    FlSpot(100, 10),
+    FlSpot(111, 23),
   ];
 
   final leftTitle = {
