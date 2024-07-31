@@ -70,10 +70,29 @@ class _LoginFormState extends State<LoginForm> {
                     onPressed: () async {
                       final email = _email.text;
                       final password = _password.text;
-                      final userCredential = await FirebaseAuth.instance
-                          .signInWithEmailAndPassword(
-                              email: email, password: password);
-                      print(userCredential);
+                      try {
+                        final userCredential = await FirebaseAuth.instance
+                            .createUserWithEmailAndPassword(
+                                email: email, password: password);
+                        // Xử lý khi đăng ký thành công
+                        print(userCredential);
+                      } catch (e) {
+                        // Xử lý lỗi
+                        if (e is FirebaseAuthException) {
+                          switch (e.code) {
+                            case 'weak-password':
+                              print('Mật khẩu quá yếu.');
+                              break;
+                            case 'email-already-in-use':
+                              print('Email đã được sử dụng.');
+                              break;
+                            default:
+                              print('Lỗi đăng ký: ${e.message}');
+                          }
+                        } else {
+                          print('Lỗi không xác định: $e');
+                        }
+                      }
                     },
                     child: const Text(
                       'Login',

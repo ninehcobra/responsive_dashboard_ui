@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "576026874094",
+    "project_id": "proximitymobile",
+    "storage_bucket": "proximitymobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576026874094:android:ed64502ff177b2d9e5e3ff",
+        "android_client_info": {
+          "package_name": "com.example.responsive_dashboard_ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfd-TyAd39572e1e0r2X6OFfqNEqdA9hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576026874094:android:07f66b5ec6a25217e5e3ff",
+        "android_client_info": {
+          "package_name": "qkit.test.flutter1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfd-TyAd39572e1e0r2X6OFfqNEqdA9hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576026874094:android:7aea4172a9173252e5e3ff",
+        "android_client_info": {
+          "package_name": "qkit.test.proximity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfd-TyAd39572e1e0r2X6OFfqNEqdA9hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
